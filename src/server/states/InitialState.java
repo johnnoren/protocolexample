@@ -1,19 +1,21 @@
 package server.states;
 
 import server.events.ClientOneDisconnected;
-import server.events.Event;
-import server.transitions.Transition;
-
-import java.util.HashMap;
+import server.events.ClientTwoDisconnected;
 
 public class InitialState implements State {
 
-	public State transition(ClientOneDisconnected clientOneDisconnected) {
-		return new EndState();
+	@Override
+	public State process(ClientOneDisconnected clientOneDisconnected) {
+		// TODO Do stuff.
+		// TODO Return the next state.
+		return null;
 	}
 
 	@Override
-	public State transition(Event event) {
+	public State process(ClientTwoDisconnected clientTwoDisconnected) {
+		// TODO Do stuff.
+		// TODO Return the next state.
 		return null;
 	}
 

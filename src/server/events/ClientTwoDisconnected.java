@@ -2,7 +2,7 @@ package server.events;
 
 import server.states.State;
 
-public class ClientOneDisconnected implements Event {
+public class ClientTwoDisconnected implements Event {
 
 	@Override
 	public State processMe(State state) {
